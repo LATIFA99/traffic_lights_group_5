@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" version="5">
+    <org.eventb.core.refinesMachine name="'" org.eventb.core.target="tjunction_m3"/>
+    <org.eventb.core.seesContext name=")" org.eventb.core.target="LIGHTS"/>
+    <org.eventb.core.variable name="*" org.eventb.core.identifier="NS_cars"/>
+    <org.eventb.core.variable name="," org.eventb.core.identifier="TJ_cars"/>
+    <org.eventb.core.variable name="." org.eventb.core.identifier="NS_lights"/>
+    <org.eventb.core.variable name="0" org.eventb.core.identifier="TJ_lights"/>
+    <org.eventb.core.variable name="&gt;" org.eventb.core.identifier="NS_timer"/>
+    <org.eventb.core.variable name="@" org.eventb.core.identifier="TJ_timer"/>
+    <org.eventb.core.variable name="O" org.eventb.core.identifier="TL_lock"/>
+    <org.eventb.core.event name="P" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="INITIALISATION">
+        <org.eventb.core.action name="'" org.eventb.core.assignment="PED_lights ≔ red" org.eventb.core.label="act8"/>
+        <org.eventb.core.action name="(" org.eventb.core.assignment="PED_request ≔ FALSE" org.eventb.core.label="act9"/>
+        <org.eventb.core.action name=")" org.eventb.core.assignment="PED_timer ≔ 0" org.eventb.core.label="act10"/>
+        <org.eventb.core.action name="*" org.eventb.core.assignment="PED_detect ≔ FALSE" org.eventb.core.label="act11"/>
+        <org.eventb.core.action name="+" org.eventb.core.assignment="PED_detect_timer ≔ 0" org.eventb.core.label="act12"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="Q" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="TJ_enter">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="TJ_enter"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="R" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="TJ_exit">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="TJ_exit"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="S" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="NS_newcar">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="NS_newcar"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="T" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="NS_carexit">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="NS_carexit"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="U" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="NS_lightY">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="NS_lightY"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="V" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="NS_lightR">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="NS_lightR"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="W" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="TJ_lightY">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="TJ_lightY"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="X" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="TJ_lightR">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="TJ_lightR"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="Y" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="NS_lightG">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="NS_lightG"/>
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd5" org.eventb.core.predicate="PED_lights = red"/>
+        <org.eventb.core.guard name=")" org.eventb.core.label="grd6" org.eventb.core.predicate="PED_timer = 0"/>
+        <org.eventb.core.guard name="*" org.eventb.core.label="grd7" org.eventb.core.predicate="PED_request = FALSE"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="Z" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="TJ_lightG">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="TJ_lightG"/>
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd4" org.eventb.core.predicate="PED_lights = red"/>
+        <org.eventb.core.guard name=")" org.eventb.core.label="grd5" org.eventb.core.predicate="PED_timer = 0"/>
+        <org.eventb.core.guard name="*" org.eventb.core.label="grd6" org.eventb.core.predicate="PED_request = FALSE"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="[" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="TJ_altexit">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="TJ_altexit"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="\" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="NS_timepass">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="NS_timepass"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="]" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="TJ_timepass">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="TJ_timepass"/>
+    </org.eventb.core.event>
+    <org.eventb.core.variable name="j" org.eventb.core.identifier="PED_lights"/>
+    <org.eventb.core.variable name="l" org.eventb.core.identifier="PED_request"/>
+    <org.eventb.core.variable name="n" org.eventb.core.identifier="PED_timer"/>
+    <org.eventb.core.variable name="p" org.eventb.core.identifier="PED_detect"/>
+    <org.eventb.core.variable name="r" org.eventb.core.identifier="PED_detect_timer"/>
+    <org.eventb.core.event name="v" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="PED_request_cross">
+        <org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="PED_request = FALSE"/>
+        <org.eventb.core.action name="(" org.eventb.core.assignment="PED_request ≔ TRUE" org.eventb.core.label="act1"/>
+        <org.eventb.core.guard name="*" org.eventb.core.label="grd2" org.eventb.core.predicate="PED_lights = red"/>
+        <org.eventb.core.guard name="+" org.eventb.core.label="grd3" org.eventb.core.predicate="PED_timer = 0"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="w" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="PED_walk_signal">
+        <org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="PED_request = TRUE"/>
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd2" org.eventb.core.predicate="NS_lights = red"/>
+        <org.eventb.core.guard name=")" org.eventb.core.label="grd3" org.eventb.core.predicate="PED_lights = red"/>
+        <org.eventb.core.action name="*" org.eventb.core.assignment="PED_lights ≔ green" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="+" org.eventb.core.assignment="PED_timer ≔ 15" org.eventb.core.label="act2"/>
+        <org.eventb.core.action name="," org.eventb.core.assignment="PED_detect_timer ≔ 5" org.eventb.core.label="act3"/>
+        <org.eventb.core.action name="-" org.eventb.core.assignment="PED_detect ≔ FALSE" org.eventb.core.label="act4"/>
+        <org.eventb.core.guard name="/" org.eventb.core.label="grd4" org.eventb.core.predicate="TJ_lights = red"/>
+        <org.eventb.core.guard name="0" org.eventb.core.label="grd5" org.eventb.core.predicate="PED_timer = 0"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="y" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="PED_detect_timeout">
+        <org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="PED_lights = green"/>
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd2" org.eventb.core.predicate="PED_detect = FALSE"/>
+        <org.eventb.core.action name="*" org.eventb.core.assignment="PED_timer ≔ 0" org.eventb.core.label="act1"/>
+        <org.eventb.core.guard name="+" org.eventb.core.label="grd3" org.eventb.core.predicate="PED_detect_timer = 0"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="z" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="&#10;&#13;&#10;&#9;⚬&#9;PED_stop_walk">
+        <org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="PED_lights = green"/>
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd2" org.eventb.core.predicate="PED_timer = 0"/>
+        <org.eventb.core.action name=")" org.eventb.core.assignment="PED_lights ≔ red" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="*" org.eventb.core.assignment="PED_timer ≔ 10" org.eventb.core.label="act2"/>
+        <org.eventb.core.action name="-" org.eventb.core.assignment="PED_request ≔ FALSE" org.eventb.core.label="act3"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="|" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="PED_timer_pass">
+        <org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="PED_timer &gt; 0"/>
+        <org.eventb.core.action name="(" org.eventb.core.assignment="PED_timer ≔ PED_timer −1" org.eventb.core.label="act1"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="}" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="PED_detect_timer_timepass">
+        <org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="PED_detect = FALSE"/>
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd2" org.eventb.core.predicate="PED_detect_timer &gt; 0"/>
+        <org.eventb.core.action name=")" org.eventb.core.assignment="PED_detect_timer ≔ PED_detect_timer −1" org.eventb.core.label="act1"/>
+    </org.eventb.core.event>
+    <org.eventb.core.invariant name="~" org.eventb.core.label="inv1" org.eventb.core.predicate="NS_cars ∈ ℕ"/>
+    <org.eventb.core.invariant name="''" org.eventb.core.label="inv2" org.eventb.core.predicate="TJ_cars ∈ ℕ"/>
+    <org.eventb.core.invariant name="'(" org.eventb.core.label="inv3" org.eventb.core.predicate="NS_lights ∈ {red, yellow, green}"/>
+    <org.eventb.core.invariant name="')" org.eventb.core.label="inv4" org.eventb.core.predicate="TJ_lights ∈ {red, yellow, green}"/>
+    <org.eventb.core.invariant name="'*" org.eventb.core.label="inv5" org.eventb.core.predicate="NS_timer ∈ ℕ"/>
+    <org.eventb.core.invariant name="'+" org.eventb.core.label="inv6" org.eventb.core.predicate="TJ_timer ∈ ℕ"/>
+    <org.eventb.core.invariant name="'," org.eventb.core.label="inv7" org.eventb.core.predicate="TL_lock ∈ BOOL"/>
+    <org.eventb.core.invariant name="'-" org.eventb.core.label="inv8" org.eventb.core.predicate="PED_lights ∈ {red,green}"/>
+    <org.eventb.core.invariant name="'." org.eventb.core.label="inv9" org.eventb.core.predicate="PED_request ∈ BOOL"/>
+    <org.eventb.core.invariant name="'/" org.eventb.core.label="inv10" org.eventb.core.predicate="PED_timer ∈ ℕ"/>
+    <org.eventb.core.invariant name="'0" org.eventb.core.label="inv11" org.eventb.core.predicate="PED_detect ∈ BOOL"/>
+    <org.eventb.core.invariant name="'1" org.eventb.core.label="inv12" org.eventb.core.predicate="PED_detect_timer ∈ ℕ"/>
+    <org.eventb.core.invariant name="'4" org.eventb.core.label="inv13" org.eventb.core.predicate="(PED_lights = green) ⇒ (NS_lights = red ∧ TJ_lights = red)"/>
+    <org.eventb.core.invariant name="'7" org.eventb.core.label="inv15" org.eventb.core.predicate="(PED_lights = green) ⇒ (PED_request = TRUE)"/>
+    <org.eventb.core.event name="'8" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="PED_detected">
+        <org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="PED_lights = green"/>
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd2" org.eventb.core.predicate="PED_detect = FALSE"/>
+        <org.eventb.core.action name=")" org.eventb.core.assignment="PED_detect ≔ TRUE" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="*" org.eventb.core.assignment="PED_detect_timer ≔ 5" org.eventb.core.label="act2"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="'9" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="PED_not_detected">
+        <org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="PED_lights = green"/>
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd2" org.eventb.core.predicate="PED_detect = TRUE"/>
+        <org.eventb.core.guard name=")" org.eventb.core.label="grd3" org.eventb.core.predicate="PED_detect_timer = 0"/>
+        <org.eventb.core.action name="*" org.eventb.core.assignment="PED_detect ≔ FALSE" org.eventb.core.label="act1"/>
+    </org.eventb.core.event>
+</org.eventb.core.machineFile>

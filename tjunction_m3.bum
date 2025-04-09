@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" version="5">
+    <org.eventb.core.refinesMachine name="'" org.eventb.core.target="tjunction_m2"/>
+    <org.eventb.core.seesContext name=")" org.eventb.core.target="LIGHTS"/>
+    <org.eventb.core.variable name="*" org.eventb.core.identifier="NS_cars"/>
+    <org.eventb.core.variable name="," org.eventb.core.identifier="TJ_cars"/>
+    <org.eventb.core.variable name="." org.eventb.core.identifier="NS_lights"/>
+    <org.eventb.core.variable name="0" org.eventb.core.identifier="TJ_lights"/>
+    <org.eventb.core.variable name="&gt;" org.eventb.core.identifier="NS_timer"/>
+    <org.eventb.core.variable name="@" org.eventb.core.identifier="TJ_timer"/>
+    <org.eventb.core.event name="A" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="INITIALISATION">
+        <org.eventb.core.action name="'" org.eventb.core.assignment="TL_lock ≔ FALSE" org.eventb.core.label="act7"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="B" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="TJ_enter">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="TJ_enter"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="C" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="TJ_exit">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="TJ_exit"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="D" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="NS_newcar">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="NS_newcar"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="E" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="NS_carexit">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="NS_carexit"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="F" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="NS_lightY">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="NS_lightY"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="G" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="NS_lightR">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="NS_lightR"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="H" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="TJ_lightY">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="TJ_lightY"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="I" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="TJ_lightR">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="TJ_lightR"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="J" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="NS_lightG">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="NS_lightG"/>
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd4" org.eventb.core.predicate="TL_lock = FALSE"/>
+        <org.eventb.core.action name=")" org.eventb.core.assignment="TL_lock ≔ TRUE" org.eventb.core.label="act3"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="K" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="TJ_lightG">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="TJ_lightG"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="L" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="TJ_altexit">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="TJ_altexit"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="M" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="NS_timepass">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="NS_timepass"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="N" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="TJ_timepass">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="TJ_timepass"/>
+    </org.eventb.core.event>
+    <org.eventb.core.variable name="O" org.eventb.core.identifier="TL_lock"/>
+    <org.eventb.core.invariant name="Q" org.eventb.core.label="inv1" org.eventb.core.predicate="NS_cars ∈ ℕ"/>
+    <org.eventb.core.invariant name="R" org.eventb.core.label="inv2" org.eventb.core.predicate="TJ_cars ∈ ℕ"/>
+    <org.eventb.core.invariant name="S" org.eventb.core.label="inv3" org.eventb.core.predicate="NS_lights ∈ {red,yellow,green}"/>
+    <org.eventb.core.invariant name="T" org.eventb.core.label="inv4" org.eventb.core.predicate="TJ_lights ∈ {red,yellow,green}"/>
+    <org.eventb.core.invariant name="U" org.eventb.core.label="inv5" org.eventb.core.predicate="NS_timer ∈ ℕ"/>
+    <org.eventb.core.invariant name="V" org.eventb.core.label="inv6" org.eventb.core.predicate="TJ_timer ∈ ℕ"/>
+    <org.eventb.core.invariant name="W" org.eventb.core.label="inv7" org.eventb.core.predicate="TL_lock ∈ BOOL"/>
+</org.eventb.core.machineFile>

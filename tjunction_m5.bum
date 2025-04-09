@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" version="5">
+    <org.eventb.core.refinesMachine name="'" org.eventb.core.target="tjunction_m4"/>
+    <org.eventb.core.seesContext name=")" org.eventb.core.target="LIGHTS"/>
+    <org.eventb.core.variable name="*" org.eventb.core.identifier="NS_cars"/>
+    <org.eventb.core.variable name="," org.eventb.core.identifier="TJ_cars"/>
+    <org.eventb.core.variable name="." org.eventb.core.identifier="NS_lights"/>
+    <org.eventb.core.variable name="0" org.eventb.core.identifier="TJ_lights"/>
+    <org.eventb.core.variable name="&gt;" org.eventb.core.identifier="NS_timer"/>
+    <org.eventb.core.variable name="@" org.eventb.core.identifier="TJ_timer"/>
+    <org.eventb.core.variable name="O" org.eventb.core.identifier="TL_lock"/>
+    <org.eventb.core.variable name="j" org.eventb.core.identifier="PED_lights"/>
+    <org.eventb.core.variable name="l" org.eventb.core.identifier="PED_request"/>
+    <org.eventb.core.variable name="n" org.eventb.core.identifier="PED_timer"/>
+    <org.eventb.core.variable name="p" org.eventb.core.identifier="PED_detect"/>
+    <org.eventb.core.variable name="r" org.eventb.core.identifier="PED_detect_timer"/>
+    <org.eventb.core.event name="s" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="INITIALISATION"/>
+    <org.eventb.core.event name="t" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="TJ_enter">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="TJ_enter"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="u" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="TJ_exit">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="TJ_exit"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="v" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="NS_newcar">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="NS_newcar"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="w" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="NS_carexit">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="NS_carexit"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="x" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="NS_lightY">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="NS_lightY"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="y" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="NS_lightR">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="NS_lightR"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="z" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="TJ_lightY">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="TJ_lightY"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="{" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="TJ_lightR">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="TJ_lightR"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="|" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="NS_lightG">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="NS_lightG"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="}" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="TJ_lightG">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="TJ_lightG"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="~" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="TJ_altexit">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="TJ_altexit"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="''" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="NS_timepass">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="NS_timepass"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="'(" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="TJ_timepass">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="TJ_timepass"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="')" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="PED_request_cross">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="PED_request_cross"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="'*" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="PED_walk_signal">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="PED_walk_signal"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="'+" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="PED_detect_timeout">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="PED_detect_timeout"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="'," org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="&#10;&#13;&#10;&#9;⚬&#9;PED_stop_walk">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="&#10;&#13;&#10;&#9;⚬&#9;PED_stop_walk"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="'-" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="PED_timer_pass">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="PED_timer_pass"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="'." org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="PED_detect_timer_timepass">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="PED_detect_timer_timepass"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="'/" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="PED_detected">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="PED_detected"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="'0" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="PED_not_detected">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="PED_not_detected"/>
+    </org.eventb.core.event>
+</org.eventb.core.machineFile>

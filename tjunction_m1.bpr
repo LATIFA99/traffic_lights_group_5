@@ -1,0 +1,638 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.prFile version="1">
+    <org.eventb.core.prProof name="INITIALISATION/inv1/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p7">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2"/>
+                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p4"/>
+                <org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p5" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p6"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p7" org.eventb.core.prHyps=""/>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="0∈ℕ"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="yellow≠green">
+            <org.eventb.core.prIdent name="colour" org.eventb.core.type="ℙ(colour)"/>
+            <org.eventb.core.prIdent name="green" org.eventb.core.type="colour"/>
+            <org.eventb.core.prIdent name="yellow" org.eventb.core.type="colour"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬red=yellow">
+            <org.eventb.core.prIdent name="colour" org.eventb.core.type="ℙ(colour)"/>
+            <org.eventb.core.prIdent name="red" org.eventb.core.type="colour"/>
+            <org.eventb.core.prIdent name="yellow" org.eventb.core.type="colour"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬red=green">
+            <org.eventb.core.prIdent name="colour" org.eventb.core.type="ℙ(colour)"/>
+            <org.eventb.core.prIdent name="green" org.eventb.core.type="colour"/>
+            <org.eventb.core.prIdent name="red" org.eventb.core.type="colour"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="red≠yellow">
+            <org.eventb.core.prIdent name="colour" org.eventb.core.type="ℙ(colour)"/>
+            <org.eventb.core.prIdent name="red" org.eventb.core.type="colour"/>
+            <org.eventb.core.prIdent name="yellow" org.eventb.core.type="colour"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="red≠green">
+            <org.eventb.core.prIdent name="colour" org.eventb.core.type="ℙ(colour)"/>
+            <org.eventb.core.prIdent name="green" org.eventb.core.type="colour"/>
+            <org.eventb.core.prIdent name="red" org.eventb.core.type="colour"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬yellow=green">
+            <org.eventb.core.prIdent name="colour" org.eventb.core.type="ℙ(colour)"/>
+            <org.eventb.core.prIdent name="green" org.eventb.core.type="colour"/>
+            <org.eventb.core.prIdent name="yellow" org.eventb.core.type="colour"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL5:0"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="INITIALISATION/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p7">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2"/>
+                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p4"/>
+                <org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p5" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p6"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p7" org.eventb.core.prHyps=""/>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="0∈ℕ"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="yellow≠green">
+            <org.eventb.core.prIdent name="colour" org.eventb.core.type="ℙ(colour)"/>
+            <org.eventb.core.prIdent name="green" org.eventb.core.type="colour"/>
+            <org.eventb.core.prIdent name="yellow" org.eventb.core.type="colour"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬red=yellow">
+            <org.eventb.core.prIdent name="colour" org.eventb.core.type="ℙ(colour)"/>
+            <org.eventb.core.prIdent name="red" org.eventb.core.type="colour"/>
+            <org.eventb.core.prIdent name="yellow" org.eventb.core.type="colour"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬red=green">
+            <org.eventb.core.prIdent name="colour" org.eventb.core.type="ℙ(colour)"/>
+            <org.eventb.core.prIdent name="green" org.eventb.core.type="colour"/>
+            <org.eventb.core.prIdent name="red" org.eventb.core.type="colour"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="red≠yellow">
+            <org.eventb.core.prIdent name="colour" org.eventb.core.type="ℙ(colour)"/>
+            <org.eventb.core.prIdent name="red" org.eventb.core.type="colour"/>
+            <org.eventb.core.prIdent name="yellow" org.eventb.core.type="colour"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="red≠green">
+            <org.eventb.core.prIdent name="colour" org.eventb.core.type="ℙ(colour)"/>
+            <org.eventb.core.prIdent name="green" org.eventb.core.type="colour"/>
+            <org.eventb.core.prIdent name="red" org.eventb.core.type="colour"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬yellow=green">
+            <org.eventb.core.prIdent name="colour" org.eventb.core.type="ℙ(colour)"/>
+            <org.eventb.core.prIdent name="green" org.eventb.core.type="colour"/>
+            <org.eventb.core.prIdent name="yellow" org.eventb.core.type="colour"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL5:0"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="INITIALISATION/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="colour">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p7">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2"/>
+                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p4"/>
+                <org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p5" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p6"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p7" org.eventb.core.prHyps=""/>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="green" org.eventb.core.type="colour"/>
+        <org.eventb.core.prIdent name="red" org.eventb.core.type="colour"/>
+        <org.eventb.core.prIdent name="yellow" org.eventb.core.type="colour"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="yellow≠green"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="green∈{red,yellow,green}"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬red=yellow"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬red=green"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="red≠yellow"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="red≠green"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬yellow=green"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL5:0"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="INITIALISATION/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="colour">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p7">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2"/>
+                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p4"/>
+                <org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p5" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p6"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p7" org.eventb.core.prHyps=""/>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="green" org.eventb.core.type="colour"/>
+        <org.eventb.core.prIdent name="red" org.eventb.core.type="colour"/>
+        <org.eventb.core.prIdent name="yellow" org.eventb.core.type="colour"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="red∈{red,yellow,green}"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="yellow≠green"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬red=yellow"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬red=green"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="red≠yellow"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="red≠green"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬yellow=green"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL5:0"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="TJ_enter/inv1/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11" org.eventb.core.prSets="colour">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p9" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p12"/>
+                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p11" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p13"/>
+                <org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p5" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p14"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with NS_lights=green" org.eventb.core.prHyps="p7">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="DESELECT0" org.eventb.core.prHyps="p7"/>
+                        <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with TJ_lights=red" org.eventb.core.prHyps="p8">
+                            <org.eventb.core.prAnte name="'">
+                                <org.eventb.core.prHypAction name="DESELECT0" org.eventb.core.prHyps="p8"/>
+                                <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p4,p2,p1,p6,p10,p3,p7,p8,p12,p13,p14">
+                                    <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="NS_cars" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="NS_lights" org.eventb.core.type="colour"/>
+        <org.eventb.core.prIdent name="TJ_cars" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="TJ_lights" org.eventb.core.type="colour"/>
+        <org.eventb.core.prIdent name="green" org.eventb.core.type="colour"/>
+        <org.eventb.core.prIdent name="red" org.eventb.core.type="colour"/>
+        <org.eventb.core.prIdent name="yellow" org.eventb.core.type="colour"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="NS_cars∈ℕ"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="colour={red,yellow,green}"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="yellow≠green"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="TJ_lights=red"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="red≠green"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="¬yellow=green"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="TJ_cars∈ℕ"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="NS_cars&gt;0"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="NS_lights∈{red,yellow,green}"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="¬red=yellow"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬red=green"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="NS_lights=green"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="red≠yellow"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="NS_cars − 1∈ℕ"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="TJ_lights∈{red,yellow,green}"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL5:0"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.eqL2:1"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="TJ_enter/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11" org.eventb.core.prSets="colour">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p9" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p12"/>
+                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p11" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p13"/>
+                <org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p5" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p14"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with NS_lights=green" org.eventb.core.prHyps="p7">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="DESELECT0" org.eventb.core.prHyps="p7"/>
+                        <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with TJ_lights=red" org.eventb.core.prHyps="p8">
+                            <org.eventb.core.prAnte name="'">
+                                <org.eventb.core.prHypAction name="DESELECT0" org.eventb.core.prHyps="p8"/>
+                                <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p4,p2,p1,p6,p10,p3,p7,p8,p12,p13,p14">
+                                    <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="NS_cars" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="NS_lights" org.eventb.core.type="colour"/>
+        <org.eventb.core.prIdent name="TJ_cars" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="TJ_lights" org.eventb.core.type="colour"/>
+        <org.eventb.core.prIdent name="green" org.eventb.core.type="colour"/>
+        <org.eventb.core.prIdent name="red" org.eventb.core.type="colour"/>
+        <org.eventb.core.prIdent name="yellow" org.eventb.core.type="colour"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="NS_cars∈ℕ"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="colour={red,yellow,green}"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="yellow≠green"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="TJ_cars+1∈ℕ"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="TJ_lights=red"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="red≠green"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="¬yellow=green"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="TJ_cars∈ℕ"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="NS_cars&gt;0"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="NS_lights∈{red,yellow,green}"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="¬red=yellow"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬red=green"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="NS_lights=green"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="red≠yellow"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="TJ_lights∈{red,yellow,green}"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL5:0"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.eqL2:1"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="TJ_exit/inv1/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11" org.eventb.core.prSets="colour">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p7" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p12"/>
+                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p9" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p13"/>
+                <org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p5" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p14"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with NS_lights=red" org.eventb.core.prHyps="p10">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="DESELECT0" org.eventb.core.prHyps="p10"/>
+                        <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with TJ_lights=green" org.eventb.core.prHyps="p11">
+                            <org.eventb.core.prAnte name="'">
+                                <org.eventb.core.prHypAction name="DESELECT0" org.eventb.core.prHyps="p11"/>
+                                <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p4,p3,p1,p6,p8,p2,p10,p11,p12,p13,p14">
+                                    <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="NS_cars" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="NS_lights" org.eventb.core.type="colour"/>
+        <org.eventb.core.prIdent name="TJ_cars" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="TJ_lights" org.eventb.core.type="colour"/>
+        <org.eventb.core.prIdent name="green" org.eventb.core.type="colour"/>
+        <org.eventb.core.prIdent name="red" org.eventb.core.type="colour"/>
+        <org.eventb.core.prIdent name="yellow" org.eventb.core.type="colour"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="TJ_cars&gt;0"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="NS_cars∈ℕ"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="colour={red,yellow,green}"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="yellow≠green"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="NS_cars+1∈ℕ"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="red≠green"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="¬yellow=green"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="NS_lights=red"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="TJ_cars∈ℕ"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="NS_lights∈{red,yellow,green}"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="¬red=yellow"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬red=green"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="red≠yellow"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="TJ_lights∈{red,yellow,green}"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="TJ_lights=green"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL5:0"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.eqL2:1"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="TJ_exit/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11" org.eventb.core.prSets="colour">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p7" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p12"/>
+                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p9" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p13"/>
+                <org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p5" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p14"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with NS_lights=red" org.eventb.core.prHyps="p10">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="DESELECT0" org.eventb.core.prHyps="p10"/>
+                        <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with TJ_lights=green" org.eventb.core.prHyps="p11">
+                            <org.eventb.core.prAnte name="'">
+                                <org.eventb.core.prHypAction name="DESELECT0" org.eventb.core.prHyps="p11"/>
+                                <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p4,p3,p1,p6,p8,p2,p10,p11,p12,p13,p14">
+                                    <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="NS_cars" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="NS_lights" org.eventb.core.type="colour"/>
+        <org.eventb.core.prIdent name="TJ_cars" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="TJ_lights" org.eventb.core.type="colour"/>
+        <org.eventb.core.prIdent name="green" org.eventb.core.type="colour"/>
+        <org.eventb.core.prIdent name="red" org.eventb.core.type="colour"/>
+        <org.eventb.core.prIdent name="yellow" org.eventb.core.type="colour"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="TJ_cars&gt;0"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="NS_cars∈ℕ"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="colour={red,yellow,green}"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="yellow≠green"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="red≠green"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="¬yellow=green"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="NS_lights=red"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="TJ_cars∈ℕ"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="TJ_cars − 1∈ℕ"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="NS_lights∈{red,yellow,green}"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="¬red=yellow"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬red=green"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="red≠yellow"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="TJ_lights∈{red,yellow,green}"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="TJ_lights=green"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL5:0"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.eqL2:1"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="NS_newcar/inv1/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8" org.eventb.core.prSets="colour">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p9" org.eventb.core.prHyps="p2" org.eventb.core.prInfHyps="p10"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p6" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p11"/>
+                        <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p8" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p12"/>
+                        <org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p4" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p13"/>
+                        <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p10"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p3,p2,p1,p5,p7,p11,p12,p13">
+                            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="NS_cars" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="NS_lights" org.eventb.core.type="colour"/>
+        <org.eventb.core.prIdent name="TJ_cars" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="TJ_lights" org.eventb.core.type="colour"/>
+        <org.eventb.core.prIdent name="green" org.eventb.core.type="colour"/>
+        <org.eventb.core.prIdent name="red" org.eventb.core.type="colour"/>
+        <org.eventb.core.prIdent name="yellow" org.eventb.core.type="colour"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="NS_cars∈ℕ"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="colour={red,yellow,green}"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="yellow≠green"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="NS_cars+1∈ℕ"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="red≠green"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬yellow=green"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="TJ_cars∈ℕ"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="NS_lights∈{red,yellow,green}"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="¬red=yellow"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="¬red=green"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="red≠yellow"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="TJ_lights∈{red,yellow,green}"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="NS_cars≥0"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL5:0"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL4"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="NS_carexit/inv1/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11" org.eventb.core.prSets="colour">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p9" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p12"/>
+                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p11" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p13"/>
+                <org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p5" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p14"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with NS_lights=green" org.eventb.core.prHyps="p7">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="DESELECT0" org.eventb.core.prHyps="p7"/>
+                        <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with TJ_lights=red" org.eventb.core.prHyps="p8">
+                            <org.eventb.core.prAnte name="'">
+                                <org.eventb.core.prHypAction name="DESELECT0" org.eventb.core.prHyps="p8"/>
+                                <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p4,p2,p1,p6,p10,p3,p7,p8,p12,p13,p14">
+                                    <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="NS_cars" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="NS_lights" org.eventb.core.type="colour"/>
+        <org.eventb.core.prIdent name="TJ_cars" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="TJ_lights" org.eventb.core.type="colour"/>
+        <org.eventb.core.prIdent name="green" org.eventb.core.type="colour"/>
+        <org.eventb.core.prIdent name="red" org.eventb.core.type="colour"/>
+        <org.eventb.core.prIdent name="yellow" org.eventb.core.type="colour"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="NS_cars∈ℕ"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="colour={red,yellow,green}"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="yellow≠green"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="TJ_lights=red"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="red≠green"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="¬yellow=green"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="TJ_cars∈ℕ"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="NS_cars&gt;0"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="NS_lights∈{red,yellow,green}"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="¬red=yellow"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬red=green"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="NS_lights=green"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="red≠yellow"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="NS_cars − 1∈ℕ"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="TJ_lights∈{red,yellow,green}"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL5:0"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.eqL2:1"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="NS_lightY/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="colour">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p7">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2"/>
+                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p4"/>
+                <org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p5" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p6"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p7" org.eventb.core.prHyps=""/>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="green" org.eventb.core.type="colour"/>
+        <org.eventb.core.prIdent name="red" org.eventb.core.type="colour"/>
+        <org.eventb.core.prIdent name="yellow" org.eventb.core.type="colour"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="yellow≠green"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬red=yellow"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬red=green"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="red≠yellow"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="yellow∈{red,yellow,green}"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="red≠green"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬yellow=green"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL5:0"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="NS_lightR/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="colour">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p7">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2"/>
+                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p4"/>
+                <org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p5" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p6"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p7" org.eventb.core.prHyps=""/>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="green" org.eventb.core.type="colour"/>
+        <org.eventb.core.prIdent name="red" org.eventb.core.type="colour"/>
+        <org.eventb.core.prIdent name="yellow" org.eventb.core.type="colour"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="red∈{red,yellow,green}"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="yellow≠green"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬red=yellow"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬red=green"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="red≠yellow"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="red≠green"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬yellow=green"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL5:0"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="TJ_lightY/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="colour">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p7">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2"/>
+                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p4"/>
+                <org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p5" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p6"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p7" org.eventb.core.prHyps=""/>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="green" org.eventb.core.type="colour"/>
+        <org.eventb.core.prIdent name="red" org.eventb.core.type="colour"/>
+        <org.eventb.core.prIdent name="yellow" org.eventb.core.type="colour"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="yellow≠green"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬red=yellow"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬red=green"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="red≠yellow"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="yellow∈{red,yellow,green}"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="red≠green"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬yellow=green"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL5:0"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="TJ_lightR/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="colour">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p7">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2"/>
+                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p4"/>
+                <org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p5" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p6"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p7" org.eventb.core.prHyps=""/>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="green" org.eventb.core.type="colour"/>
+        <org.eventb.core.prIdent name="red" org.eventb.core.type="colour"/>
+        <org.eventb.core.prIdent name="yellow" org.eventb.core.type="colour"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="red∈{red,yellow,green}"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="yellow≠green"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬red=yellow"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬red=green"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="red≠yellow"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="red≠green"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬yellow=green"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL5:0"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="NS_lightG/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="colour">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p7">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2"/>
+                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p4"/>
+                <org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p5" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p6"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p7" org.eventb.core.prHyps=""/>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="green" org.eventb.core.type="colour"/>
+        <org.eventb.core.prIdent name="red" org.eventb.core.type="colour"/>
+        <org.eventb.core.prIdent name="yellow" org.eventb.core.type="colour"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="yellow≠green"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="green∈{red,yellow,green}"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬red=yellow"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬red=green"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="red≠yellow"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="red≠green"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬yellow=green"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL5:0"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="TJ_lightG/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="colour">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p7">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2"/>
+                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p4"/>
+                <org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p5" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p6"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p7" org.eventb.core.prHyps=""/>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="green" org.eventb.core.type="colour"/>
+        <org.eventb.core.prIdent name="red" org.eventb.core.type="colour"/>
+        <org.eventb.core.prIdent name="yellow" org.eventb.core.type="colour"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="yellow≠green"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="green∈{red,yellow,green}"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬red=yellow"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬red=green"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="red≠yellow"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="red≠green"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬yellow=green"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL5:0"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="TJ_altexit/inv1/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9" org.eventb.core.prSets="colour">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p7" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p10"/>
+                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p9" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p11"/>
+                <org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p5" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p12"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p4,p3,p1,p6,p8,p2,p10,p11,p12">
+                    <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="NS_cars" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="NS_lights" org.eventb.core.type="colour"/>
+        <org.eventb.core.prIdent name="TJ_cars" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="TJ_lights" org.eventb.core.type="colour"/>
+        <org.eventb.core.prIdent name="green" org.eventb.core.type="colour"/>
+        <org.eventb.core.prIdent name="red" org.eventb.core.type="colour"/>
+        <org.eventb.core.prIdent name="yellow" org.eventb.core.type="colour"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="TJ_cars&gt;0"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="NS_cars∈ℕ"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="colour={red,yellow,green}"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="yellow≠green"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="NS_cars+1∈ℕ"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="red≠green"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="¬yellow=green"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="TJ_cars∈ℕ"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="NS_lights∈{red,yellow,green}"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="¬red=yellow"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="¬red=green"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="red≠yellow"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="TJ_lights∈{red,yellow,green}"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL5:0"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="TJ_altexit/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9" org.eventb.core.prSets="colour">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p7" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p10"/>
+                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p9" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p11"/>
+                <org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p5" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p12"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p4,p3,p1,p6,p8,p2,p10,p11,p12">
+                    <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="NS_cars" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="NS_lights" org.eventb.core.type="colour"/>
+        <org.eventb.core.prIdent name="TJ_cars" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="TJ_lights" org.eventb.core.type="colour"/>
+        <org.eventb.core.prIdent name="green" org.eventb.core.type="colour"/>
+        <org.eventb.core.prIdent name="red" org.eventb.core.type="colour"/>
+        <org.eventb.core.prIdent name="yellow" org.eventb.core.type="colour"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="TJ_cars&gt;0"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="NS_cars∈ℕ"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="colour={red,yellow,green}"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="yellow≠green"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="red≠green"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="¬yellow=green"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="TJ_cars∈ℕ"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="TJ_cars − 1∈ℕ"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="NS_lights∈{red,yellow,green}"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="¬red=yellow"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="¬red=green"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="red≠yellow"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="TJ_lights∈{red,yellow,green}"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL5:0"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+    </org.eventb.core.prProof>
+</org.eventb.core.prFile>

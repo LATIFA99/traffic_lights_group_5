@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="1">
+    <org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="colour" org.eventb.core.type="ℙ(colour)"/>
+        <org.eventb.core.poIdentifier name="yellow" org.eventb.core.type="colour"/>
+        <org.eventb.core.poIdentifier name="red" org.eventb.core.type="colour"/>
+        <org.eventb.core.poIdentifier name="green" org.eventb.core.type="colour"/>
+        <org.eventb.core.poPredicate name="yellox" org.eventb.core.predicate="colour={red,yellow,green}" org.eventb.core.source="/TrafficLight-Group5/LIGHTS.buc|org.eventb.core.contextFile#LIGHTS|org.eventb.core.axiom#)"/>
+        <org.eventb.core.poPredicate name="yelloy" org.eventb.core.predicate="red≠yellow" org.eventb.core.source="/TrafficLight-Group5/LIGHTS.buc|org.eventb.core.contextFile#LIGHTS|org.eventb.core.axiom#+"/>
+        <org.eventb.core.poPredicate name="yelloz" org.eventb.core.predicate="red≠green" org.eventb.core.source="/TrafficLight-Group5/LIGHTS.buc|org.eventb.core.contextFile#LIGHTS|org.eventb.core.axiom#-"/>
+        <org.eventb.core.poPredicate name="yello{" org.eventb.core.predicate="yellow≠green" org.eventb.core.source="/TrafficLight-Group5/LIGHTS.buc|org.eventb.core.contextFile#LIGHTS|org.eventb.core.axiom#."/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m5.bpo|org.eventb.core.poFile#tjunction_m5|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="PED_request" org.eventb.core.type="BOOL"/>
+        <org.eventb.core.poIdentifier name="NS_timer" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="NS_lights" org.eventb.core.type="colour"/>
+        <org.eventb.core.poIdentifier name="TL_lock" org.eventb.core.type="BOOL"/>
+        <org.eventb.core.poIdentifier name="NS_cars" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="TJ_cars" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="PED_detect" org.eventb.core.type="BOOL"/>
+        <org.eventb.core.poIdentifier name="TJ_timer" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="PED_timer" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="TJ_lights" org.eventb.core.type="colour"/>
+        <org.eventb.core.poIdentifier name="PED_lights" org.eventb.core.type="colour"/>
+        <org.eventb.core.poIdentifier name="PED_detect_timer" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poPredicate name="PED_detect_times" org.eventb.core.predicate="NS_cars∈ℕ" org.eventb.core.source="/TrafficLight-Group5/tjunction_m0.bum|org.eventb.core.machineFile#tjunction_m0|org.eventb.core.invariant#)"/>
+        <org.eventb.core.poPredicate name="PED_detect_timet" org.eventb.core.predicate="TJ_cars∈ℕ" org.eventb.core.source="/TrafficLight-Group5/tjunction_m0.bum|org.eventb.core.machineFile#tjunction_m0|org.eventb.core.invariant#+"/>
+        <org.eventb.core.poPredicate name="PED_detect_timeu" org.eventb.core.predicate="NS_cars∈ℕ" org.eventb.core.source="/TrafficLight-Group5/tjunction_m1.bum|org.eventb.core.machineFile#tjunction_m1|org.eventb.core.invariant#+"/>
+        <org.eventb.core.poPredicate name="PED_detect_timev" org.eventb.core.predicate="TJ_cars∈ℕ" org.eventb.core.source="/TrafficLight-Group5/tjunction_m1.bum|org.eventb.core.machineFile#tjunction_m1|org.eventb.core.invariant#-"/>
+        <org.eventb.core.poPredicate name="PED_detect_timew" org.eventb.core.predicate="NS_lights∈{red,yellow,green}" org.eventb.core.source="/TrafficLight-Group5/tjunction_m1.bum|org.eventb.core.machineFile#tjunction_m1|org.eventb.core.invariant#\/"/>
+        <org.eventb.core.poPredicate name="PED_detect_timex" org.eventb.core.predicate="TJ_lights∈{red,yellow,green}" org.eventb.core.source="/TrafficLight-Group5/tjunction_m1.bum|org.eventb.core.machineFile#tjunction_m1|org.eventb.core.invariant#1"/>
+        <org.eventb.core.poPredicate name="PED_detect_timey" org.eventb.core.predicate="NS_cars∈ℕ" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.invariant#D"/>
+        <org.eventb.core.poPredicate name="PED_detect_timez" org.eventb.core.predicate="TJ_cars∈ℕ" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.invariant#E"/>
+        <org.eventb.core.poPredicate name="PED_detect_time{" org.eventb.core.predicate="NS_lights∈{red,yellow,green}" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.invariant#F"/>
+        <org.eventb.core.poPredicate name="PED_detect_time|" org.eventb.core.predicate="TJ_lights∈{red,yellow,green}" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.invariant#G"/>
+        <org.eventb.core.poPredicate name="PED_detect_time}" org.eventb.core.predicate="NS_timer∈ℕ" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.invariant#H"/>
+        <org.eventb.core.poPredicate name="PED_detect_time~" org.eventb.core.predicate="TJ_timer∈ℕ" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.invariant#I"/>
+        <org.eventb.core.poPredicate name="PED_detect_timf'" org.eventb.core.predicate="NS_cars∈ℕ" org.eventb.core.source="/TrafficLight-Group5/tjunction_m3.bum|org.eventb.core.machineFile#tjunction_m3|org.eventb.core.invariant#Q"/>
+        <org.eventb.core.poPredicate name="PED_detect_timf(" org.eventb.core.predicate="TJ_cars∈ℕ" org.eventb.core.source="/TrafficLight-Group5/tjunction_m3.bum|org.eventb.core.machineFile#tjunction_m3|org.eventb.core.invariant#R"/>
+        <org.eventb.core.poPredicate name="PED_detect_timf)" org.eventb.core.predicate="NS_lights∈{red,yellow,green}" org.eventb.core.source="/TrafficLight-Group5/tjunction_m3.bum|org.eventb.core.machineFile#tjunction_m3|org.eventb.core.invariant#S"/>
+        <org.eventb.core.poPredicate name="PED_detect_timf*" org.eventb.core.predicate="TJ_lights∈{red,yellow,green}" org.eventb.core.source="/TrafficLight-Group5/tjunction_m3.bum|org.eventb.core.machineFile#tjunction_m3|org.eventb.core.invariant#T"/>
+        <org.eventb.core.poPredicate name="PED_detect_timf+" org.eventb.core.predicate="NS_timer∈ℕ" org.eventb.core.source="/TrafficLight-Group5/tjunction_m3.bum|org.eventb.core.machineFile#tjunction_m3|org.eventb.core.invariant#U"/>
+        <org.eventb.core.poPredicate name="PED_detect_timf," org.eventb.core.predicate="TJ_timer∈ℕ" org.eventb.core.source="/TrafficLight-Group5/tjunction_m3.bum|org.eventb.core.machineFile#tjunction_m3|org.eventb.core.invariant#V"/>
+        <org.eventb.core.poPredicate name="PED_detect_timf-" org.eventb.core.predicate="TL_lock∈BOOL" org.eventb.core.source="/TrafficLight-Group5/tjunction_m3.bum|org.eventb.core.machineFile#tjunction_m3|org.eventb.core.invariant#W"/>
+        <org.eventb.core.poPredicate name="PED_detect_timf." org.eventb.core.predicate="NS_cars∈ℕ" org.eventb.core.source="/TrafficLight-Group5/tjunction_m4.bum|org.eventb.core.machineFile#tjunction_m4|org.eventb.core.invariant#~"/>
+        <org.eventb.core.poPredicate name="PED_detect_timf/" org.eventb.core.predicate="TJ_cars∈ℕ" org.eventb.core.source="/TrafficLight-Group5/tjunction_m4.bum|org.eventb.core.machineFile#tjunction_m4|org.eventb.core.invariant#''"/>
+        <org.eventb.core.poPredicate name="PED_detect_timf0" org.eventb.core.predicate="NS_lights∈{red,yellow,green}" org.eventb.core.source="/TrafficLight-Group5/tjunction_m4.bum|org.eventb.core.machineFile#tjunction_m4|org.eventb.core.invariant#'("/>
+        <org.eventb.core.poPredicate name="PED_detect_timf1" org.eventb.core.predicate="TJ_lights∈{red,yellow,green}" org.eventb.core.source="/TrafficLight-Group5/tjunction_m4.bum|org.eventb.core.machineFile#tjunction_m4|org.eventb.core.invariant#')"/>
+        <org.eventb.core.poPredicate name="PED_detect_timf2" org.eventb.core.predicate="NS_timer∈ℕ" org.eventb.core.source="/TrafficLight-Group5/tjunction_m4.bum|org.eventb.core.machineFile#tjunction_m4|org.eventb.core.invariant#'*"/>
+        <org.eventb.core.poPredicate name="PED_detect_timf3" org.eventb.core.predicate="TJ_timer∈ℕ" org.eventb.core.source="/TrafficLight-Group5/tjunction_m4.bum|org.eventb.core.machineFile#tjunction_m4|org.eventb.core.invariant#'+"/>
+        <org.eventb.core.poPredicate name="PED_detect_timf4" org.eventb.core.predicate="TL_lock∈BOOL" org.eventb.core.source="/TrafficLight-Group5/tjunction_m4.bum|org.eventb.core.machineFile#tjunction_m4|org.eventb.core.invariant#',"/>
+        <org.eventb.core.poPredicate name="PED_detect_timf5" org.eventb.core.predicate="PED_lights∈{red,green}" org.eventb.core.source="/TrafficLight-Group5/tjunction_m4.bum|org.eventb.core.machineFile#tjunction_m4|org.eventb.core.invariant#'-"/>
+        <org.eventb.core.poPredicate name="PED_detect_timf6" org.eventb.core.predicate="PED_request∈BOOL" org.eventb.core.source="/TrafficLight-Group5/tjunction_m4.bum|org.eventb.core.machineFile#tjunction_m4|org.eventb.core.invariant#'."/>
+        <org.eventb.core.poPredicate name="PED_detect_timf7" org.eventb.core.predicate="PED_timer∈ℕ" org.eventb.core.source="/TrafficLight-Group5/tjunction_m4.bum|org.eventb.core.machineFile#tjunction_m4|org.eventb.core.invariant#'\/"/>
+        <org.eventb.core.poPredicate name="PED_detect_timf8" org.eventb.core.predicate="PED_detect∈BOOL" org.eventb.core.source="/TrafficLight-Group5/tjunction_m4.bum|org.eventb.core.machineFile#tjunction_m4|org.eventb.core.invariant#'0"/>
+        <org.eventb.core.poPredicate name="PED_detect_timf9" org.eventb.core.predicate="PED_detect_timer∈ℕ" org.eventb.core.source="/TrafficLight-Group5/tjunction_m4.bum|org.eventb.core.machineFile#tjunction_m4|org.eventb.core.invariant#'1"/>
+        <org.eventb.core.poPredicate name="PED_detect_timf:" org.eventb.core.predicate="PED_lights=green⇒NS_lights=red∧TJ_lights=red" org.eventb.core.source="/TrafficLight-Group5/tjunction_m4.bum|org.eventb.core.machineFile#tjunction_m4|org.eventb.core.invariant#'4"/>
+        <org.eventb.core.poPredicate name="PED_detect_timf;" org.eventb.core.predicate="PED_lights=green⇒PED_request=TRUE" org.eventb.core.source="/TrafficLight-Group5/tjunction_m4.bum|org.eventb.core.machineFile#tjunction_m4|org.eventb.core.invariant#'7"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTIDENTPED_detect_times" org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m5.bpo|org.eventb.core.poFile#tjunction_m5|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="NS_lights'" org.eventb.core.type="colour"/>
+        <org.eventb.core.poIdentifier name="TL_lock'" org.eventb.core.type="BOOL"/>
+        <org.eventb.core.poIdentifier name="PED_timer'" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="NS_timer'" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="PED_request'" org.eventb.core.type="BOOL"/>
+        <org.eventb.core.poIdentifier name="PED_detect'" org.eventb.core.type="BOOL"/>
+        <org.eventb.core.poIdentifier name="PED_detect_timer'" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="PED_lights'" org.eventb.core.type="colour"/>
+        <org.eventb.core.poIdentifier name="NS_cars'" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="TJ_cars'" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="TJ_timer'" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="TJ_lights'" org.eventb.core.type="colour"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPPED_detect_times" org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m5.bpo|org.eventb.core.poFile#tjunction_m5|org.eventb.core.poPredicateSet#EVTIDENTPED_detect_times" org.eventb.core.poStamp="0"/>
+    <org.eventb.core.poPredicateSet name="EVTIDENTPED_detect_timet" org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m5.bpo|org.eventb.core.poFile#tjunction_m5|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="NS_cars'" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="TJ_cars'" org.eventb.core.type="ℤ"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPPED_detect_timet" org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m5.bpo|org.eventb.core.poFile#tjunction_m5|org.eventb.core.poPredicateSet#EVTIDENTPED_detect_timet" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="NS_cars&gt;0" org.eventb.core.source="/TrafficLight-Group5/tjunction_m0.bum|org.eventb.core.machineFile#tjunction_m0|org.eventb.core.event#,|org.eventb.core.guard#'"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="NS_lights=green" org.eventb.core.source="/TrafficLight-Group5/tjunction_m1.bum|org.eventb.core.machineFile#tjunction_m1|org.eventb.core.event#2|org.eventb.core.guard#("/>
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="TJ_lights=red" org.eventb.core.source="/TrafficLight-Group5/tjunction_m1.bum|org.eventb.core.machineFile#tjunction_m1|org.eventb.core.event#2|org.eventb.core.guard#)"/>
+        <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="NS_timer&gt;0" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.event#2|org.eventb.core.guard#("/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTIDENTPED_detect_timeu" org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m5.bpo|org.eventb.core.poFile#tjunction_m5|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="NS_cars'" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="TJ_cars'" org.eventb.core.type="ℤ"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPPED_detect_timeu" org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m5.bpo|org.eventb.core.poFile#tjunction_m5|org.eventb.core.poPredicateSet#EVTIDENTPED_detect_timeu" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="TJ_cars&gt;0" org.eventb.core.source="/TrafficLight-Group5/tjunction_m0.bum|org.eventb.core.machineFile#tjunction_m0|org.eventb.core.event#-|org.eventb.core.guard#'"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="NS_lights=red" org.eventb.core.source="/TrafficLight-Group5/tjunction_m1.bum|org.eventb.core.machineFile#tjunction_m1|org.eventb.core.event#3|org.eventb.core.guard#("/>
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="TJ_lights=green" org.eventb.core.source="/TrafficLight-Group5/tjunction_m1.bum|org.eventb.core.machineFile#tjunction_m1|org.eventb.core.event#3|org.eventb.core.guard#)"/>
+        <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="TJ_timer&gt;0" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.event#3|org.eventb.core.guard#("/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTIDENTPED_detect_timev" org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m5.bpo|org.eventb.core.poFile#tjunction_m5|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="NS_cars'" org.eventb.core.type="ℤ"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPPED_detect_timev" org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m5.bpo|org.eventb.core.poFile#tjunction_m5|org.eventb.core.poPredicateSet#EVTIDENTPED_detect_timev" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="NS_cars≥0" org.eventb.core.source="/TrafficLight-Group5/tjunction_m0.bum|org.eventb.core.machineFile#tjunction_m0|org.eventb.core.event#.|org.eventb.core.guard#'"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTIDENTPED_detect_timew" org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m5.bpo|org.eventb.core.poFile#tjunction_m5|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="NS_cars'" org.eventb.core.type="ℤ"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPPED_detect_timew" org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m5.bpo|org.eventb.core.poFile#tjunction_m5|org.eventb.core.poPredicateSet#EVTIDENTPED_detect_timew" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="NS_cars&gt;0" org.eventb.core.source="/TrafficLight-Group5/tjunction_m1.bum|org.eventb.core.machineFile#tjunction_m1|org.eventb.core.event#5|org.eventb.core.guard#'"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="NS_lights=green" org.eventb.core.source="/TrafficLight-Group5/tjunction_m1.bum|org.eventb.core.machineFile#tjunction_m1|org.eventb.core.event#5|org.eventb.core.guard#("/>
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="TJ_lights=red" org.eventb.core.source="/TrafficLight-Group5/tjunction_m1.bum|org.eventb.core.machineFile#tjunction_m1|org.eventb.core.event#5|org.eventb.core.guard#)"/>
+        <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="NS_timer&gt;0" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.event#5|org.eventb.core.guard#("/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTIDENTPED_detect_timex" org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m5.bpo|org.eventb.core.poFile#tjunction_m5|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="NS_lights'" org.eventb.core.type="colour"/>
+        <org.eventb.core.poIdentifier name="NS_timer'" org.eventb.core.type="ℤ"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPPED_detect_timex" org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m5.bpo|org.eventb.core.poFile#tjunction_m5|org.eventb.core.poPredicateSet#EVTIDENTPED_detect_timex" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="NS_lights=green" org.eventb.core.source="/TrafficLight-Group5/tjunction_m1.bum|org.eventb.core.machineFile#tjunction_m1|org.eventb.core.event#6|org.eventb.core.guard#'"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="TJ_lights=red" org.eventb.core.source="/TrafficLight-Group5/tjunction_m1.bum|org.eventb.core.machineFile#tjunction_m1|org.eventb.core.event#6|org.eventb.core.guard#("/>
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="NS_timer=0" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.event#6|org.eventb.core.guard#("/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTIDENTPED_detect_timey" org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m5.bpo|org.eventb.core.poFile#tjunction_m5|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="NS_lights'" org.eventb.core.type="colour"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPPED_detect_timey" org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m5.bpo|org.eventb.core.poFile#tjunction_m5|org.eventb.core.poPredicateSet#EVTIDENTPED_detect_timey" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="NS_lights=yellow" org.eventb.core.source="/TrafficLight-Group5/tjunction_m1.bum|org.eventb.core.machineFile#tjunction_m1|org.eventb.core.event#7|org.eventb.core.guard#'"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="TJ_lights=red" org.eventb.core.source="/TrafficLight-Group5/tjunction_m1.bum|org.eventb.core.machineFile#tjunction_m1|org.eventb.core.event#7|org.eventb.core.guard#("/>
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="NS_timer=0" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.event#7|org.eventb.core.guard#("/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTIDENTPED_detect_timez" org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m5.bpo|org.eventb.core.poFile#tjunction_m5|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="TJ_timer'" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="TJ_lights'" org.eventb.core.type="colour"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPPED_detect_timez" org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m5.bpo|org.eventb.core.poFile#tjunction_m5|org.eventb.core.poPredicateSet#EVTIDENTPED_detect_timez" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="TJ_lights=green" org.eventb.core.source="/TrafficLight-Group5/tjunction_m1.bum|org.eventb.core.machineFile#tjunction_m1|org.eventb.core.event#8|org.eventb.core.guard#'"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="NS_lights=red" org.eventb.core.source="/TrafficLight-Group5/tjunction_m1.bum|org.eventb.core.machineFile#tjunction_m1|org.eventb.core.event#8|org.eventb.core.guard#("/>
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="TJ_timer=0" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.event#8|org.eventb.core.guard#("/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTIDENTPED_detect_time{" org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m5.bpo|org.eventb.core.poFile#tjunction_m5|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="TJ_lights'" org.eventb.core.type="colour"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPPED_detect_time{" org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m5.bpo|org.eventb.core.poFile#tjunction_m5|org.eventb.core.poPredicateSet#EVTIDENTPED_detect_time{" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="TJ_lights=yellow" org.eventb.core.source="/TrafficLight-Group5/tjunction_m1.bum|org.eventb.core.machineFile#tjunction_m1|org.eventb.core.event#9|org.eventb.core.guard#'"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="NS_lights=red" org.eventb.core.source="/TrafficLight-Group5/tjunction_m1.bum|org.eventb.core.machineFile#tjunction_m1|org.eventb.core.event#9|org.eventb.core.guard#("/>
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="TJ_timer=0" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.event#9|org.eventb.core.guard#("/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTIDENTPED_detect_time|" org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m5.bpo|org.eventb.core.poFile#tjunction_m5|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="NS_lights'" org.eventb.core.type="colour"/>
+        <org.eventb.core.poIdentifier name="TL_lock'" org.eventb.core.type="BOOL"/>
+        <org.eventb.core.poIdentifier name="NS_timer'" org.eventb.core.type="ℤ"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPPED_detect_time|" org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m5.bpo|org.eventb.core.poFile#tjunction_m5|org.eventb.core.poPredicateSet#EVTIDENTPED_detect_time\|" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="NS_lights=red" org.eventb.core.source="/TrafficLight-Group5/tjunction_m1.bum|org.eventb.core.machineFile#tjunction_m1|org.eventb.core.event#:|org.eventb.core.guard#'"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="TJ_lights=red" org.eventb.core.source="/TrafficLight-Group5/tjunction_m1.bum|org.eventb.core.machineFile#tjunction_m1|org.eventb.core.event#:|org.eventb.core.guard#("/>
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="NS_timer=0" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.event#:|org.eventb.core.guard#("/>
+        <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="TL_lock=FALSE" org.eventb.core.source="/TrafficLight-Group5/tjunction_m3.bum|org.eventb.core.machineFile#tjunction_m3|org.eventb.core.event#J|org.eventb.core.guard#("/>
+        <org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="PED_lights=red" org.eventb.core.source="/TrafficLight-Group5/tjunction_m4.bum|org.eventb.core.machineFile#tjunction_m4|org.eventb.core.event#Y|org.eventb.core.guard#("/>
+        <org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="PED_timer=0" org.eventb.core.source="/TrafficLight-Group5/tjunction_m4.bum|org.eventb.core.machineFile#tjunction_m4|org.eventb.core.event#Y|org.eventb.core.guard#)"/>
+        <org.eventb.core.poPredicate name="PRD6" org.eventb.core.predicate="PED_request=FALSE" org.eventb.core.source="/TrafficLight-Group5/tjunction_m4.bum|org.eventb.core.machineFile#tjunction_m4|org.eventb.core.event#Y|org.eventb.core.guard#*"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTIDENTPED_detect_time}" org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m5.bpo|org.eventb.core.poFile#tjunction_m5|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="TJ_timer'" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="TJ_lights'" org.eventb.core.type="colour"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPPED_detect_time}" org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m5.bpo|org.eventb.core.poFile#tjunction_m5|org.eventb.core.poPredicateSet#EVTIDENTPED_detect_time}" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="TJ_lights=red" org.eventb.core.source="/TrafficLight-Group5/tjunction_m1.bum|org.eventb.core.machineFile#tjunction_m1|org.eventb.core.event#;|org.eventb.core.guard#'"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="NS_lights=red" org.eventb.core.source="/TrafficLight-Group5/tjunction_m1.bum|org.eventb.core.machineFile#tjunction_m1|org.eventb.core.event#;|org.eventb.core.guard#("/>
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="NS_timer=0" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.event#;|org.eventb.core.guard#("/>
+        <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="PED_lights=red" org.eventb.core.source="/TrafficLight-Group5/tjunction_m4.bum|org.eventb.core.machineFile#tjunction_m4|org.eventb.core.event#Z|org.eventb.core.guard#("/>
+        <org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="PED_timer=0" org.eventb.core.source="/TrafficLight-Group5/tjunction_m4.bum|org.eventb.core.machineFile#tjunction_m4|org.eventb.core.event#Z|org.eventb.core.guard#)"/>
+        <org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="PED_request=FALSE" org.eventb.core.source="/TrafficLight-Group5/tjunction_m4.bum|org.eventb.core.machineFile#tjunction_m4|org.eventb.core.event#Z|org.eventb.core.guard#*"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTIDENTPED_detect_time~" org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m5.bpo|org.eventb.core.poFile#tjunction_m5|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="NS_cars'" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="TJ_cars'" org.eventb.core.type="ℤ"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPPED_detect_time~" org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m5.bpo|org.eventb.core.poFile#tjunction_m5|org.eventb.core.poPredicateSet#EVTIDENTPED_detect_time~" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="TJ_cars&gt;0" org.eventb.core.source="/TrafficLight-Group5/tjunction_m0.bum|org.eventb.core.machineFile#tjunction_m0|org.eventb.core.event#0|org.eventb.core.guard#'"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTIDENTPED_detect_timf'" org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m5.bpo|org.eventb.core.poFile#tjunction_m5|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="NS_timer'" org.eventb.core.type="ℤ"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPPED_detect_timf'" org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m5.bpo|org.eventb.core.poFile#tjunction_m5|org.eventb.core.poPredicateSet#EVTIDENTPED_detect_timf'" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="NS_timer&gt;0" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.event#B|org.eventb.core.guard#'"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTIDENTPED_detect_timf(" org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m5.bpo|org.eventb.core.poFile#tjunction_m5|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="TJ_timer'" org.eventb.core.type="ℤ"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPPED_detect_timf(" org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m5.bpo|org.eventb.core.poFile#tjunction_m5|org.eventb.core.poPredicateSet#EVTIDENTPED_detect_timf(" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="TJ_timer&gt;0" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.event#C|org.eventb.core.guard#'"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTIDENTPED_detect_timf)" org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m5.bpo|org.eventb.core.poFile#tjunction_m5|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="PED_request'" org.eventb.core.type="BOOL"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPPED_detect_timf)" org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m5.bpo|org.eventb.core.poFile#tjunction_m5|org.eventb.core.poPredicateSet#EVTIDENTPED_detect_timf)" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="PED_request=FALSE" org.eventb.core.source="/TrafficLight-Group5/tjunction_m4.bum|org.eventb.core.machineFile#tjunction_m4|org.eventb.core.event#v|org.eventb.core.guard#'"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="PED_lights=red" org.eventb.core.source="/TrafficLight-Group5/tjunction_m4.bum|org.eventb.core.machineFile#tjunction_m4|org.eventb.core.event#v|org.eventb.core.guard#*"/>
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="PED_timer=0" org.eventb.core.source="/TrafficLight-Group5/tjunction_m4.bum|org.eventb.core.machineFile#tjunction_m4|org.eventb.core.event#v|org.eventb.core.guard#+"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTIDENTPED_detect_timf*" org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m5.bpo|org.eventb.core.poFile#tjunction_m5|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="PED_timer'" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="PED_detect'" org.eventb.core.type="BOOL"/>
+        <org.eventb.core.poIdentifier name="PED_detect_timer'" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="PED_lights'" org.eventb.core.type="colour"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPPED_detect_timf*" org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m5.bpo|org.eventb.core.poFile#tjunction_m5|org.eventb.core.poPredicateSet#EVTIDENTPED_detect_timf*" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="PED_request=TRUE" org.eventb.core.source="/TrafficLight-Group5/tjunction_m4.bum|org.eventb.core.machineFile#tjunction_m4|org.eventb.core.event#w|org.eventb.core.guard#'"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="NS_lights=red" org.eventb.core.source="/TrafficLight-Group5/tjunction_m4.bum|org.eventb.core.machineFile#tjunction_m4|org.eventb.core.event#w|org.eventb.core.guard#("/>
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="PED_lights=red" org.eventb.core.source="/TrafficLight-Group5/tjunction_m4.bum|org.eventb.core.machineFile#tjunction_m4|org.eventb.core.event#w|org.eventb.core.guard#)"/>
+        <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="TJ_lights=red" org.eventb.core.source="/TrafficLight-Group5/tjunction_m4.bum|org.eventb.core.machineFile#tjunction_m4|org.eventb.core.event#w|org.eventb.core.guard#\/"/>
+        <org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="PED_timer=0" org.eventb.core.source="/TrafficLight-Group5/tjunction_m4.bum|org.eventb.core.machineFile#tjunction_m4|org.eventb.core.event#w|org.eventb.core.guard#0"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTIDENTPED_detect_timf+" org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m5.bpo|org.eventb.core.poFile#tjunction_m5|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="PED_timer'" org.eventb.core.type="ℤ"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPPED_detect_timf+" org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m5.bpo|org.eventb.core.poFile#tjunction_m5|org.eventb.core.poPredicateSet#EVTIDENTPED_detect_timf+" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="PED_lights=green" org.eventb.core.source="/TrafficLight-Group5/tjunction_m4.bum|org.eventb.core.machineFile#tjunction_m4|org.eventb.core.event#y|org.eventb.core.guard#'"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="PED_detect=FALSE" org.eventb.core.source="/TrafficLight-Group5/tjunction_m4.bum|org.eventb.core.machineFile#tjunction_m4|org.eventb.core.event#y|org.eventb.core.guard#("/>
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="PED_detect_timer=0" org.eventb.core.source="/TrafficLight-Group5/tjunction_m4.bum|org.eventb.core.machineFile#tjunction_m4|org.eventb.core.event#y|org.eventb.core.guard#+"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTIDENTPED_detect_timf," org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m5.bpo|org.eventb.core.poFile#tjunction_m5|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="PED_timer'" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="PED_request'" org.eventb.core.type="BOOL"/>
+        <org.eventb.core.poIdentifier name="PED_lights'" org.eventb.core.type="colour"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPPED_detect_timf," org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m5.bpo|org.eventb.core.poFile#tjunction_m5|org.eventb.core.poPredicateSet#EVTIDENTPED_detect_timf," org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="PED_lights=green" org.eventb.core.source="/TrafficLight-Group5/tjunction_m4.bum|org.eventb.core.machineFile#tjunction_m4|org.eventb.core.event#z|org.eventb.core.guard#'"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="PED_timer=0" org.eventb.core.source="/TrafficLight-Group5/tjunction_m4.bum|org.eventb.core.machineFile#tjunction_m4|org.eventb.core.event#z|org.eventb.core.guard#("/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTIDENTPED_detect_timf-" org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m5.bpo|org.eventb.core.poFile#tjunction_m5|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="PED_timer'" org.eventb.core.type="ℤ"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPPED_detect_timf-" org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m5.bpo|org.eventb.core.poFile#tjunction_m5|org.eventb.core.poPredicateSet#EVTIDENTPED_detect_timf-" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="PED_timer&gt;0" org.eventb.core.source="/TrafficLight-Group5/tjunction_m4.bum|org.eventb.core.machineFile#tjunction_m4|org.eventb.core.event#\||org.eventb.core.guard#'"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTIDENTPED_detect_timf." org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m5.bpo|org.eventb.core.poFile#tjunction_m5|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="PED_detect_timer'" org.eventb.core.type="ℤ"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPPED_detect_timf." org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m5.bpo|org.eventb.core.poFile#tjunction_m5|org.eventb.core.poPredicateSet#EVTIDENTPED_detect_timf." org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="PED_detect=FALSE" org.eventb.core.source="/TrafficLight-Group5/tjunction_m4.bum|org.eventb.core.machineFile#tjunction_m4|org.eventb.core.event#}|org.eventb.core.guard#'"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="PED_detect_timer&gt;0" org.eventb.core.source="/TrafficLight-Group5/tjunction_m4.bum|org.eventb.core.machineFile#tjunction_m4|org.eventb.core.event#}|org.eventb.core.guard#("/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTIDENTPED_detect_timf/" org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m5.bpo|org.eventb.core.poFile#tjunction_m5|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="PED_detect'" org.eventb.core.type="BOOL"/>
+        <org.eventb.core.poIdentifier name="PED_detect_timer'" org.eventb.core.type="ℤ"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPPED_detect_timf/" org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m5.bpo|org.eventb.core.poFile#tjunction_m5|org.eventb.core.poPredicateSet#EVTIDENTPED_detect_timf\/" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="PED_lights=green" org.eventb.core.source="/TrafficLight-Group5/tjunction_m4.bum|org.eventb.core.machineFile#tjunction_m4|org.eventb.core.event#'8|org.eventb.core.guard#'"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="PED_detect=FALSE" org.eventb.core.source="/TrafficLight-Group5/tjunction_m4.bum|org.eventb.core.machineFile#tjunction_m4|org.eventb.core.event#'8|org.eventb.core.guard#("/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTIDENTPED_detect_timf0" org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m5.bpo|org.eventb.core.poFile#tjunction_m5|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="PED_detect'" org.eventb.core.type="BOOL"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPPED_detect_timf0" org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m5.bpo|org.eventb.core.poFile#tjunction_m5|org.eventb.core.poPredicateSet#EVTIDENTPED_detect_timf0" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="PED_lights=green" org.eventb.core.source="/TrafficLight-Group5/tjunction_m4.bum|org.eventb.core.machineFile#tjunction_m4|org.eventb.core.event#'9|org.eventb.core.guard#'"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="PED_detect=TRUE" org.eventb.core.source="/TrafficLight-Group5/tjunction_m4.bum|org.eventb.core.machineFile#tjunction_m4|org.eventb.core.event#'9|org.eventb.core.guard#("/>
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="PED_detect_timer=0" org.eventb.core.source="/TrafficLight-Group5/tjunction_m4.bum|org.eventb.core.machineFile#tjunction_m4|org.eventb.core.event#'9|org.eventb.core.guard#)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m5.bpo|org.eventb.core.poFile#tjunction_m5|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0"/>
+</org.eventb.core.poFile>

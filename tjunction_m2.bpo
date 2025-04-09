@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="1">
+    <org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="1">
+        <org.eventb.core.poIdentifier name="colour" org.eventb.core.type="ℙ(colour)"/>
+        <org.eventb.core.poIdentifier name="yellow" org.eventb.core.type="colour"/>
+        <org.eventb.core.poIdentifier name="red" org.eventb.core.type="colour"/>
+        <org.eventb.core.poIdentifier name="green" org.eventb.core.type="colour"/>
+        <org.eventb.core.poPredicate name="yellox" org.eventb.core.predicate="colour={red,yellow,green}" org.eventb.core.source="/TrafficLight-Group5/LIGHTS.buc|org.eventb.core.contextFile#LIGHTS|org.eventb.core.axiom#)"/>
+        <org.eventb.core.poPredicate name="yelloy" org.eventb.core.predicate="red≠yellow" org.eventb.core.source="/TrafficLight-Group5/LIGHTS.buc|org.eventb.core.contextFile#LIGHTS|org.eventb.core.axiom#+"/>
+        <org.eventb.core.poPredicate name="yelloz" org.eventb.core.predicate="red≠green" org.eventb.core.source="/TrafficLight-Group5/LIGHTS.buc|org.eventb.core.contextFile#LIGHTS|org.eventb.core.axiom#-"/>
+        <org.eventb.core.poPredicate name="yello{" org.eventb.core.predicate="yellow≠green" org.eventb.core.source="/TrafficLight-Group5/LIGHTS.buc|org.eventb.core.contextFile#LIGHTS|org.eventb.core.axiom#."/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="1">
+        <org.eventb.core.poIdentifier name="NS_timer" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="NS_lights" org.eventb.core.type="colour"/>
+        <org.eventb.core.poIdentifier name="NS_cars" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="TJ_cars" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="TJ_timer" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="TJ_lights" org.eventb.core.type="colour"/>
+        <org.eventb.core.poPredicate name="TJ_lightt" org.eventb.core.predicate="NS_cars∈ℕ" org.eventb.core.source="/TrafficLight-Group5/tjunction_m0.bum|org.eventb.core.machineFile#tjunction_m0|org.eventb.core.invariant#)"/>
+        <org.eventb.core.poPredicate name="TJ_lightu" org.eventb.core.predicate="TJ_cars∈ℕ" org.eventb.core.source="/TrafficLight-Group5/tjunction_m0.bum|org.eventb.core.machineFile#tjunction_m0|org.eventb.core.invariant#+"/>
+        <org.eventb.core.poPredicate name="TJ_lightv" org.eventb.core.predicate="NS_cars∈ℕ" org.eventb.core.source="/TrafficLight-Group5/tjunction_m1.bum|org.eventb.core.machineFile#tjunction_m1|org.eventb.core.invariant#+"/>
+        <org.eventb.core.poPredicate name="TJ_lightw" org.eventb.core.predicate="TJ_cars∈ℕ" org.eventb.core.source="/TrafficLight-Group5/tjunction_m1.bum|org.eventb.core.machineFile#tjunction_m1|org.eventb.core.invariant#-"/>
+        <org.eventb.core.poPredicate name="TJ_lightx" org.eventb.core.predicate="NS_lights∈{red,yellow,green}" org.eventb.core.source="/TrafficLight-Group5/tjunction_m1.bum|org.eventb.core.machineFile#tjunction_m1|org.eventb.core.invariant#\/"/>
+        <org.eventb.core.poPredicate name="TJ_lighty" org.eventb.core.predicate="TJ_lights∈{red,yellow,green}" org.eventb.core.source="/TrafficLight-Group5/tjunction_m1.bum|org.eventb.core.machineFile#tjunction_m1|org.eventb.core.invariant#1"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="INITIALISATION/inv1/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#EVTALLHYPTJ_lightt"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="0∈ℕ" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.invariant#D"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/TrafficLight-Group5/tjunction_m1.bum|org.eventb.core.machineFile#tjunction_m1|org.eventb.core.event#'"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.event#1"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.invariant#D"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poSequent#INITIALISATION\/inv1\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD0"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="INITIALISATION/inv2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#EVTALLHYPTJ_lightt"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="0∈ℕ" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.invariant#E"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/TrafficLight-Group5/tjunction_m1.bum|org.eventb.core.machineFile#tjunction_m1|org.eventb.core.event#'"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.event#1"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.invariant#E"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poSequent#INITIALISATION\/inv2\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD1"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="INITIALISATION/inv3/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#EVTALLHYPTJ_lightt"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="green∈{red,yellow,green}" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.invariant#F"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/TrafficLight-Group5/tjunction_m1.bum|org.eventb.core.machineFile#tjunction_m1|org.eventb.core.event#'"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.event#1"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.invariant#F"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poSequent#INITIALISATION\/inv3\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD2"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="INITIALISATION/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#EVTALLHYPTJ_lightt"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="red∈{red,yellow,green}" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.invariant#G"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/TrafficLight-Group5/tjunction_m1.bum|org.eventb.core.machineFile#tjunction_m1|org.eventb.core.event#'"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.event#1"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.invariant#G"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poSequent#INITIALISATION\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="INITIALISATION/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#EVTALLHYPTJ_lightt"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="30∈ℕ" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.invariant#H"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/TrafficLight-Group5/tjunction_m1.bum|org.eventb.core.machineFile#tjunction_m1|org.eventb.core.event#'"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.event#1"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.invariant#H"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poSequent#INITIALISATION\/inv5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="INITIALISATION/inv6/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#EVTALLHYPTJ_lightt"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="0∈ℕ" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.invariant#I"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/TrafficLight-Group5/tjunction_m1.bum|org.eventb.core.machineFile#tjunction_m1|org.eventb.core.event#'"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.event#1"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.invariant#I"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poSequent#INITIALISATION\/inv6\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD5"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTTJ_lightt" org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="1">
+        <org.eventb.core.poIdentifier name="NS_lights'" org.eventb.core.type="colour"/>
+        <org.eventb.core.poIdentifier name="NS_timer'" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="NS_cars'" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="TJ_cars'" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="TJ_timer'" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="TJ_lights'" org.eventb.core.type="colour"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPTJ_lightt" org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#EVTIDENTTJ_lightt" org.eventb.core.poStamp="1"/>
+    <org.eventb.core.poSequent name="TJ_enter/inv1/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#EVTALLHYPTJ_lightu"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="NS_cars − 1∈ℕ" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.invariant#D"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/TrafficLight-Group5/tjunction_m1.bum|org.eventb.core.machineFile#tjunction_m1|org.eventb.core.event#2"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.event#2"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.invariant#D"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poSequent#TJ_enter\/inv1\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD0"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="TJ_enter/inv2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#EVTALLHYPTJ_lightu"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="TJ_cars+1∈ℕ" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.invariant#E"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/TrafficLight-Group5/tjunction_m1.bum|org.eventb.core.machineFile#tjunction_m1|org.eventb.core.event#2"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.event#2"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.invariant#E"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poSequent#TJ_enter\/inv2\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD1"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTTJ_lightu" org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="1">
+        <org.eventb.core.poIdentifier name="NS_cars'" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="TJ_cars'" org.eventb.core.type="ℤ"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPTJ_lightu" org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#EVTIDENTTJ_lightu" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="NS_cars&gt;0" org.eventb.core.source="/TrafficLight-Group5/tjunction_m0.bum|org.eventb.core.machineFile#tjunction_m0|org.eventb.core.event#,|org.eventb.core.guard#'"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="NS_lights=green" org.eventb.core.source="/TrafficLight-Group5/tjunction_m1.bum|org.eventb.core.machineFile#tjunction_m1|org.eventb.core.event#2|org.eventb.core.guard#("/>
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="TJ_lights=red" org.eventb.core.source="/TrafficLight-Group5/tjunction_m1.bum|org.eventb.core.machineFile#tjunction_m1|org.eventb.core.event#2|org.eventb.core.guard#)"/>
+        <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="NS_timer&gt;0" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.event#2|org.eventb.core.guard#("/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="TJ_exit/inv1/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#EVTALLHYPTJ_lightv"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="NS_cars+1∈ℕ" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.invariant#D"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/TrafficLight-Group5/tjunction_m1.bum|org.eventb.core.machineFile#tjunction_m1|org.eventb.core.event#3"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.event#3"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.invariant#D"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poSequent#TJ_exit\/inv1\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD0"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="TJ_exit/inv2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#EVTALLHYPTJ_lightv"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="TJ_cars − 1∈ℕ" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.invariant#E"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/TrafficLight-Group5/tjunction_m1.bum|org.eventb.core.machineFile#tjunction_m1|org.eventb.core.event#3"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.event#3"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.invariant#E"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poSequent#TJ_exit\/inv2\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD1"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTTJ_lightv" org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="1">
+        <org.eventb.core.poIdentifier name="NS_cars'" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="TJ_cars'" org.eventb.core.type="ℤ"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPTJ_lightv" org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#EVTIDENTTJ_lightv" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="TJ_cars&gt;0" org.eventb.core.source="/TrafficLight-Group5/tjunction_m0.bum|org.eventb.core.machineFile#tjunction_m0|org.eventb.core.event#-|org.eventb.core.guard#'"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="NS_lights=red" org.eventb.core.source="/TrafficLight-Group5/tjunction_m1.bum|org.eventb.core.machineFile#tjunction_m1|org.eventb.core.event#3|org.eventb.core.guard#("/>
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="TJ_lights=green" org.eventb.core.source="/TrafficLight-Group5/tjunction_m1.bum|org.eventb.core.machineFile#tjunction_m1|org.eventb.core.event#3|org.eventb.core.guard#)"/>
+        <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="TJ_timer&gt;0" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.event#3|org.eventb.core.guard#("/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="NS_newcar/inv1/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#EVTALLHYPTJ_lightw"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="NS_cars+1∈ℕ" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.invariant#D"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/TrafficLight-Group5/tjunction_m1.bum|org.eventb.core.machineFile#tjunction_m1|org.eventb.core.event#4"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.event#4"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.invariant#D"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poSequent#NS_newcar\/inv1\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD0"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTTJ_lightw" org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="1">
+        <org.eventb.core.poIdentifier name="NS_cars'" org.eventb.core.type="ℤ"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPTJ_lightw" org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#EVTIDENTTJ_lightw" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="NS_cars≥0" org.eventb.core.source="/TrafficLight-Group5/tjunction_m0.bum|org.eventb.core.machineFile#tjunction_m0|org.eventb.core.event#.|org.eventb.core.guard#'"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="NS_carexit/inv1/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#EVTALLHYPTJ_lightx"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="NS_cars − 1∈ℕ" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.invariant#D"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/TrafficLight-Group5/tjunction_m1.bum|org.eventb.core.machineFile#tjunction_m1|org.eventb.core.event#5"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.event#5"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.invariant#D"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poSequent#NS_carexit\/inv1\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD0"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTTJ_lightx" org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="1">
+        <org.eventb.core.poIdentifier name="NS_cars'" org.eventb.core.type="ℤ"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPTJ_lightx" org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#EVTIDENTTJ_lightx" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="NS_cars&gt;0" org.eventb.core.source="/TrafficLight-Group5/tjunction_m1.bum|org.eventb.core.machineFile#tjunction_m1|org.eventb.core.event#5|org.eventb.core.guard#'"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="NS_lights=green" org.eventb.core.source="/TrafficLight-Group5/tjunction_m1.bum|org.eventb.core.machineFile#tjunction_m1|org.eventb.core.event#5|org.eventb.core.guard#("/>
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="TJ_lights=red" org.eventb.core.source="/TrafficLight-Group5/tjunction_m1.bum|org.eventb.core.machineFile#tjunction_m1|org.eventb.core.event#5|org.eventb.core.guard#)"/>
+        <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="NS_timer&gt;0" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.event#5|org.eventb.core.guard#("/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="NS_lightY/inv3/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#EVTALLHYPTJ_lighty"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="yellow∈{red,yellow,green}" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.invariant#F"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/TrafficLight-Group5/tjunction_m1.bum|org.eventb.core.machineFile#tjunction_m1|org.eventb.core.event#6"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.event#6"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.invariant#F"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poSequent#NS_lightY\/inv3\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD2"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="NS_lightY/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#EVTALLHYPTJ_lighty"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="5∈ℕ" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.invariant#H"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/TrafficLight-Group5/tjunction_m1.bum|org.eventb.core.machineFile#tjunction_m1|org.eventb.core.event#6"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.event#6"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.invariant#H"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poSequent#NS_lightY\/inv5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTTJ_lighty" org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="1">
+        <org.eventb.core.poIdentifier name="NS_lights'" org.eventb.core.type="colour"/>
+        <org.eventb.core.poIdentifier name="NS_timer'" org.eventb.core.type="ℤ"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPTJ_lighty" org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#EVTIDENTTJ_lighty" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="NS_lights=green" org.eventb.core.source="/TrafficLight-Group5/tjunction_m1.bum|org.eventb.core.machineFile#tjunction_m1|org.eventb.core.event#6|org.eventb.core.guard#'"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="TJ_lights=red" org.eventb.core.source="/TrafficLight-Group5/tjunction_m1.bum|org.eventb.core.machineFile#tjunction_m1|org.eventb.core.event#6|org.eventb.core.guard#("/>
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="NS_timer=0" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.event#6|org.eventb.core.guard#("/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="NS_lightR/inv3/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#EVTALLHYPTJ_lightz"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="red∈{red,yellow,green}" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.invariant#F"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/TrafficLight-Group5/tjunction_m1.bum|org.eventb.core.machineFile#tjunction_m1|org.eventb.core.event#7"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.event#7"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.invariant#F"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poSequent#NS_lightR\/inv3\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD2"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTTJ_lightz" org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="1">
+        <org.eventb.core.poIdentifier name="NS_lights'" org.eventb.core.type="colour"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPTJ_lightz" org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#EVTIDENTTJ_lightz" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="NS_lights=yellow" org.eventb.core.source="/TrafficLight-Group5/tjunction_m1.bum|org.eventb.core.machineFile#tjunction_m1|org.eventb.core.event#7|org.eventb.core.guard#'"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="TJ_lights=red" org.eventb.core.source="/TrafficLight-Group5/tjunction_m1.bum|org.eventb.core.machineFile#tjunction_m1|org.eventb.core.event#7|org.eventb.core.guard#("/>
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="NS_timer=0" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.event#7|org.eventb.core.guard#("/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="TJ_lightY/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#EVTALLHYPTJ_light{"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="yellow∈{red,yellow,green}" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.invariant#G"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/TrafficLight-Group5/tjunction_m1.bum|org.eventb.core.machineFile#tjunction_m1|org.eventb.core.event#8"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.event#8"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.invariant#G"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poSequent#TJ_lightY\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="TJ_lightY/inv6/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#EVTALLHYPTJ_light{"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="5∈ℕ" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.invariant#I"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/TrafficLight-Group5/tjunction_m1.bum|org.eventb.core.machineFile#tjunction_m1|org.eventb.core.event#8"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.event#8"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.invariant#I"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poSequent#TJ_lightY\/inv6\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD5"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTTJ_light{" org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="1">
+        <org.eventb.core.poIdentifier name="TJ_timer'" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="TJ_lights'" org.eventb.core.type="colour"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPTJ_light{" org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#EVTIDENTTJ_light{" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="TJ_lights=green" org.eventb.core.source="/TrafficLight-Group5/tjunction_m1.bum|org.eventb.core.machineFile#tjunction_m1|org.eventb.core.event#8|org.eventb.core.guard#'"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="NS_lights=red" org.eventb.core.source="/TrafficLight-Group5/tjunction_m1.bum|org.eventb.core.machineFile#tjunction_m1|org.eventb.core.event#8|org.eventb.core.guard#("/>
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="TJ_timer=0" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.event#8|org.eventb.core.guard#("/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="TJ_lightR/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#EVTALLHYPTJ_light\|"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="red∈{red,yellow,green}" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.invariant#G"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/TrafficLight-Group5/tjunction_m1.bum|org.eventb.core.machineFile#tjunction_m1|org.eventb.core.event#9"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.event#9"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.invariant#G"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poSequent#TJ_lightR\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTTJ_light|" org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="1">
+        <org.eventb.core.poIdentifier name="TJ_lights'" org.eventb.core.type="colour"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPTJ_light|" org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#EVTIDENTTJ_light\|" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="TJ_lights=yellow" org.eventb.core.source="/TrafficLight-Group5/tjunction_m1.bum|org.eventb.core.machineFile#tjunction_m1|org.eventb.core.event#9|org.eventb.core.guard#'"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="NS_lights=red" org.eventb.core.source="/TrafficLight-Group5/tjunction_m1.bum|org.eventb.core.machineFile#tjunction_m1|org.eventb.core.event#9|org.eventb.core.guard#("/>
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="TJ_timer=0" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.event#9|org.eventb.core.guard#("/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="NS_lightG/inv3/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#EVTALLHYPTJ_light}"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="green∈{red,yellow,green}" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.invariant#F"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/TrafficLight-Group5/tjunction_m1.bum|org.eventb.core.machineFile#tjunction_m1|org.eventb.core.event#:"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.event#:"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.invariant#F"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poSequent#NS_lightG\/inv3\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD2"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="NS_lightG/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#EVTALLHYPTJ_light}"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="30∈ℕ" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.invariant#H"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/TrafficLight-Group5/tjunction_m1.bum|org.eventb.core.machineFile#tjunction_m1|org.eventb.core.event#:"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.event#:"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.invariant#H"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poSequent#NS_lightG\/inv5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTTJ_light}" org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="1">
+        <org.eventb.core.poIdentifier name="NS_lights'" org.eventb.core.type="colour"/>
+        <org.eventb.core.poIdentifier name="NS_timer'" org.eventb.core.type="ℤ"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPTJ_light}" org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#EVTIDENTTJ_light}" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="NS_lights=red" org.eventb.core.source="/TrafficLight-Group5/tjunction_m1.bum|org.eventb.core.machineFile#tjunction_m1|org.eventb.core.event#:|org.eventb.core.guard#'"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="TJ_lights=red" org.eventb.core.source="/TrafficLight-Group5/tjunction_m1.bum|org.eventb.core.machineFile#tjunction_m1|org.eventb.core.event#:|org.eventb.core.guard#("/>
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="NS_timer=0" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.event#:|org.eventb.core.guard#("/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="TJ_lightG/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#EVTALLHYPTJ_light~"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="green∈{red,yellow,green}" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.invariant#G"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/TrafficLight-Group5/tjunction_m1.bum|org.eventb.core.machineFile#tjunction_m1|org.eventb.core.event#;"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.event#;"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.invariant#G"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poSequent#TJ_lightG\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="TJ_lightG/inv6/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#EVTALLHYPTJ_light~"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="30∈ℕ" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.invariant#I"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/TrafficLight-Group5/tjunction_m1.bum|org.eventb.core.machineFile#tjunction_m1|org.eventb.core.event#;"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.event#;"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.invariant#I"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poSequent#TJ_lightG\/inv6\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD5"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTTJ_light~" org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="1">
+        <org.eventb.core.poIdentifier name="TJ_timer'" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="TJ_lights'" org.eventb.core.type="colour"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPTJ_light~" org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#EVTIDENTTJ_light~" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="TJ_lights=red" org.eventb.core.source="/TrafficLight-Group5/tjunction_m1.bum|org.eventb.core.machineFile#tjunction_m1|org.eventb.core.event#;|org.eventb.core.guard#'"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="NS_lights=red" org.eventb.core.source="/TrafficLight-Group5/tjunction_m1.bum|org.eventb.core.machineFile#tjunction_m1|org.eventb.core.event#;|org.eventb.core.guard#("/>
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="NS_timer=0" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.event#;|org.eventb.core.guard#("/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="TJ_altexit/inv1/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#EVTALLHYPTJ_lighu'"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="NS_cars+1∈ℕ" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.invariant#D"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/TrafficLight-Group5/tjunction_m1.bum|org.eventb.core.machineFile#tjunction_m1|org.eventb.core.event#="/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.event#="/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.invariant#D"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poSequent#TJ_altexit\/inv1\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD0"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="TJ_altexit/inv2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#EVTALLHYPTJ_lighu'"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="TJ_cars − 1∈ℕ" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.invariant#E"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/TrafficLight-Group5/tjunction_m1.bum|org.eventb.core.machineFile#tjunction_m1|org.eventb.core.event#="/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.event#="/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.invariant#E"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poSequent#TJ_altexit\/inv2\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD1"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTTJ_lighu'" org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="1">
+        <org.eventb.core.poIdentifier name="NS_cars'" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="TJ_cars'" org.eventb.core.type="ℤ"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPTJ_lighu'" org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#EVTIDENTTJ_lighu'" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="TJ_cars&gt;0" org.eventb.core.source="/TrafficLight-Group5/tjunction_m0.bum|org.eventb.core.machineFile#tjunction_m0|org.eventb.core.event#0|org.eventb.core.guard#'"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="NS_timepass/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#EVTALLHYPTJ_lighu("/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="NS_timer − 1∈ℕ" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.invariant#H"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.event#B"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.invariant#H"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poSequent#NS_timepass\/inv5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTTJ_lighu(" org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="1">
+        <org.eventb.core.poIdentifier name="NS_timer'" org.eventb.core.type="ℤ"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPTJ_lighu(" org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#EVTIDENTTJ_lighu(" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="NS_timer&gt;0" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.event#B|org.eventb.core.guard#'"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="TJ_timepass/inv6/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#EVTALLHYPTJ_lighu)"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="TJ_timer − 1∈ℕ" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.invariant#I"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.event#C"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.invariant#I"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poSequent#TJ_timepass\/inv6\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD5"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTTJ_lighu)" org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="1">
+        <org.eventb.core.poIdentifier name="TJ_timer'" org.eventb.core.type="ℤ"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPTJ_lighu)" org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#EVTIDENTTJ_lighu)" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="TJ_timer&gt;0" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.event#C|org.eventb.core.guard#'"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/TrafficLight-Group5/tjunction_m2.bpo|org.eventb.core.poFile#tjunction_m2|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="NS_cars∈ℕ" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.invariant#D"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="TJ_cars∈ℕ" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.invariant#E"/>
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="NS_lights∈{red,yellow,green}" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.invariant#F"/>
+        <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="TJ_lights∈{red,yellow,green}" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.invariant#G"/>
+        <org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="NS_timer∈ℕ" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.invariant#H"/>
+        <org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="TJ_timer∈ℕ" org.eventb.core.source="/TrafficLight-Group5/tjunction_m2.bum|org.eventb.core.machineFile#tjunction_m2|org.eventb.core.invariant#I"/>
+    </org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>
